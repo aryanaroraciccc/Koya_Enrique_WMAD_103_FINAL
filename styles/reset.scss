@@ -1,0 +1,27 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  // min-height: 100vh;
+  // text-rendering: optimizeSpeed;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

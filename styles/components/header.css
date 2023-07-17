@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2em 1em 1em;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 13em;
+  }
+}
+
+.icon {
+  color: #8bc24a;
+}
+
+.header-contact-container {
+  display: flex;
+  gap: 1em;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-wrapper {
+  margin-left: 2.5em;
+  width: 9.5em;
+  height: 6.25em;
+}
+.header-logo-wrapper img {
+  width: 100%;
+}
+
+.header-menu {
+  display: flex;
+  gap: 4em;
+}
+.header-menu a {
+  text-decoration: none;
+  color: inherit;
+}
