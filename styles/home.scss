@@ -1,1 +1,38 @@
+@use "./constants/colors";
 @import "./components/header";
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: #000000;
+  color: #ffffff;
+  // height: 50%;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  h2 {
+    color: colors.$text-primary;
+  }
+}
+
+.top-description-container {
+  line-height: 1.5em;
+}
+
+.top-image-container {
+  max-width: 100%;
+
+  img {
+    width: 100%;
+  }
+}

@@ -96,8 +96,6 @@
   background-color: #8bc24a;
 }
 .header-menu-mobile a {
-  text-decoration: none;
-  color: inherit;
   display: block;
   text-align: center;
   width: 100%;
@@ -106,4 +104,38 @@
   .header-menu-mobile {
     display: none;
   }
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.title-container h2 {
+  color: #8bc24a;
+}
+
+.top-description-container {
+  line-height: 1.5em;
+}
+
+.top-image-container {
+  max-width: 100%;
+}
+.top-image-container img {
+  width: 100%;
 }
