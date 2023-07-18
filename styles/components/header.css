@@ -1,3 +1,7 @@
+.is-not-visible {
+  display: none !important;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -64,10 +68,6 @@
     display: flex;
     gap: 4em;
   }
-  .header-menu-pc a {
-    text-decoration: none;
-    color: inherit;
-  }
   .header-menu-pc a:hover {
     color: #8bc24a;
   }
@@ -96,8 +96,6 @@
   background-color: #8bc24a;
 }
 .header-menu-mobile a {
-  text-decoration: none;
-  color: inherit;
   display: block;
   text-align: center;
   width: 100%;
