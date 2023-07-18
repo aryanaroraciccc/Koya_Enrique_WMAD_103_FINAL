@@ -139,3 +139,47 @@
 .top-image-container img {
   width: 100%;
 }
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-image: url(../images/vegetable-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5em;
+}
+
+.description-slogan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-weight: 600;
+  font-size: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .description-slogan-container {
+    font-size: 1.3em;
+  }
+}
+
+.description-title span {
+  color: #8bc24a;
+}
+
+.description-section {
+  font-size: 1em;
+  line-height: 2em;
+}
+.description-section .description-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .description-section {
+    font-size: 1.2em;
+  }
+}
