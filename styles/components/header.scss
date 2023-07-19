@@ -2,6 +2,10 @@
 @use "../constants/colors";
 @import "../utils/toggle";
 
+.text-primary {
+  color: colors.$text-primary;
+}
+
 .header {
   display: flex;
   flex-direction: row;

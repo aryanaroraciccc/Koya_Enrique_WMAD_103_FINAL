@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.text-primary {
+  color: #8bc24a;
+}
+
 .header {
   display: flex;
   flex-direction: row;
