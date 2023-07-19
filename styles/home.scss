@@ -92,4 +92,36 @@
 }
 
 
-// .concept-container {}
+.concept-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../images/flavours.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1.5em;
+  line-height: 2em;
+}
+
+.concept-container-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4em;
+
+  .link-section {
+    display: flex;
+    gap: 1em;
+    width: 30%;
+    height: 100%;
+    * {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
