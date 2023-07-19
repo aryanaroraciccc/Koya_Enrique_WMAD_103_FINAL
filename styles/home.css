@@ -199,17 +199,31 @@
 
 .concept-container-bottom {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 4em;
+  height: auto;
 }
 .concept-container-bottom .link-section {
   display: flex;
   gap: 1em;
-  width: 30%;
   height: 100%;
+}
+.concept-container-bottom .link-section * {
+  width: 50%;
 }
 .concept-container-bottom .link-section * img {
   width: 100%;
   height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .concept-container-bottom {
+    flex-direction: row;
+  }
+  .concept-container-bottom .link-section {
+    width: 30%;
+  }
+  .concept-container-bottom .link-section * {
+    width: 30%;
+  }
 }

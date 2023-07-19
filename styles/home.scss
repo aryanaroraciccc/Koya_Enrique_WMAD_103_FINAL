@@ -108,19 +108,31 @@
 
 .concept-container-bottom {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 4em;
+  height: auto;
 
   .link-section {
     display: flex;
     gap: 1em;
-    width: 30%;
+    // width: 30%;
     height: 100%;
     * {
+      width: 50%;
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: media-queries.$media-mobile) {
+    flex-direction: row;
+    .link-section {
+      width: 30%;
+      * {
+        width: 30%;
       }
     }
   }
