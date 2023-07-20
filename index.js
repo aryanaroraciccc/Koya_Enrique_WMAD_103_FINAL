@@ -2,36 +2,40 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button")
 const mobileMenu = document.getElementById("mobile-menu")
 
+// constants
+const isNotVisibleClassName = "is-not-visible"
+const mobileBreakPointPx = 768
+
 // states
 let isMobileMenuVisible = false
 const setIsMobileMenuVisible = (bool = !mobileMenu.classList.contains("is-not-visible")) => {
   isMobileMenuVisible = bool
 }
 
-let isWideScreen = window.innerWidth > 768;
-const setIsWideScreen = (bool = window.innerWidth > 768) => {
+let isWideScreen = window.innerWidth > mobileBreakPointPx;
+const setIsWideScreen = (bool = window.innerWidth > mobileBreakPointPx) => {
   isWideScreen = bool
 }
 
 // functions
 const toggleVisible = (htmlElement) => {
-  htmlElement.classList.toggle("is-not-visible")
-  htmlElement.classList.contains("is-not-visible")
+  htmlElement.classList.toggle(isNotVisibleClassName)
+  htmlElement.classList.contains(isNotVisibleClassName)
     ? setIsMobileMenuVisible(false)
     : setIsMobileMenuVisible(true)
 }
 
 const toggleVisibleByScreenSize = (htmlElement) => {
   isWideScreen
-    ? htmlElement.classList.remove("is-not-visible")
-    : htmlElement.classList.add("is-not-visible")
+    ? htmlElement.classList.remove(isNotVisibleClassName)
+    : htmlElement.classList.add(isNotVisibleClassName)
 }
 
 const handleWindowResize = () => {
   setIsWideScreen()
 
   if (isWideScreen && isMobileMenuVisible) {
-    mobileMenu.classList.add("is-not-visible")
+    mobileMenu.classList.add(isNotVisibleClassName)
     setIsMobileMenuVisible(false)
   }
 }
