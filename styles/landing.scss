@@ -45,4 +45,19 @@
       color: colors.$text-primary;
     }
   }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+    color: colors.$text-primary;
+    a {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 }

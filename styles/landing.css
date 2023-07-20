@@ -40,3 +40,17 @@
 .main-section a:hover {
   color: #8bc24a;
 }
+.main-section .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.5em;
+  color: #8bc24a;
+}
+.main-section .icon-container a {
+  cursor: pointer;
+}
+.main-section .icon-container a:hover {
+  opacity: 0.6;
+}
