@@ -36,7 +36,33 @@ const handleWindowResize = () => {
   }
 }
 
+const handlePcMenuItemColor = () => {
+  const pathName = window.location.pathname
+
+  const toPrimary = (id) => {
+    const element = document.getElementById(id)
+    element.classList.add("text-primary")
+  }
+
+  switch (pathName) {
+    case "/home.html":
+      toPrimary("header-menu-pc-home")
+      return
+    case "/reservation.html":
+      toPrimary("header-menu-pc-reservation")
+      return
+    case "/menu.html":
+      toPrimary("header-menu-pc-menu")
+      return
+    case "/contact.html":
+      toPrimary("header-menu-pc-contact")
+      return
+  }
+
+}
+
 // event listeners
+window.addEventListener("load", handlePcMenuItemColor)
 window.addEventListener("resize", handleWindowResize)
 
 mobileMenuButton.addEventListener("click", () => toggleVisible(mobileMenu))
