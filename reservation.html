@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/reservation.css" />
+  <title>Dark Table - reservation</title>
+</head>
+<body>
+  <header class="header">
+
+    <div class="header-menu-container">
+
+      <div class="header-logo-wrapper">
+        <img src="./images/darkheader.jpg" />
+      </div>
+
+      <nav class="header-menu-pc">
+        <div id="header-menu-pc-home"><a href="./home.html">Home</a></div>
+        <div id="header-menu-pc-menu"><a href="#">Menu</a></div>
+        <div id="header-menu-pc-reservation"><a href="./reservation.html">Reservation</a></div>
+        <div id="header-menu-pc-contact"><a href="#">Contact Us</a></div>
+      </nav>
+    </div>
+
+    <div class="header-contact-container">
+      <a href="tel:+1-604-739-3275" class="contact-info-wrapper">
+        <i class="fas fa-phone-alt icon"></i>
+        <p>+1 604-739-3275</p>
+      </a>
+      <a href="mailto:info@darktable.ca" class="contact-info-wrapper">
+        <i class="fas fa-envelope icon"></i>
+        <p>info@darktable.ca</p>
+      </a>
+    </div>
+
+    <!-- mobile menu open/close button -->
+    <div class="header-menu-mobile-icon" id="mobile-menu-button">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="header-menu-mobile is-not-visible" id="mobile-menu">
+      <a href="./home.html">Home</a>
+      <a href="#">Menu</a>
+      <a href="./reservation.html">Reservation</a>
+      <a href="#">Contact Us</a>
+      <a href="tel:+1-604-739-3275"><i class="fas fa-phone-alt"></i> +1 604-739-3275</a>
+      <a href="mailto:info@darktable.ca"><i class="fas fa-envelope"></i> info@darktable.ca</a>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <h1>Dark Table - Vancouver</h1>
+    <form class="reservation-form">
+      <fieldset>
+        <input type="date" lang="en" />
+        <select>
+          <option>5:30 PM</option>
+          <option>5:45 PM</option>
+          <option>6:00 PM</option>
+          <option>6:15 PM</option>
+          <option>6:30 PM</option>
+          <option>6:45 PM</option>
+          <option>7:00 PM</option>
+          <option>7:15 PM</option>
+          <option>7:30 PM</option>
+        </select>
+        <select>
+          <option>1 guest</option>
+          <option>2 guests</option>
+          <option>3 guests</option>
+          <option>4 guests</option>
+          <option>5 guests</option>
+          <option>6 guests</option>
+          <option>7 guests</option>
+          <option>8 guests</option>
+          <option>9 guests</option>
+          <option>10 guests</option>
+          <option>11 guests</option>
+          <option>12 guests</option>
+          <option>13 guests</option>
+          <option>14 guests</option>
+          <option>15 guests</option>
+          <option>16 guests</option>
+          <option>17 guests</option>
+          <option>18 guests</option>
+          <option>19 guests</option>
+          <option>20 guests</option>
+        </select>
+      </fieldset>
+      <button type="button">Find a table</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
